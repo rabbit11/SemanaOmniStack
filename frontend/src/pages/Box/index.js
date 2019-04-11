@@ -22,7 +22,7 @@ export default class Box extends Component {
         this.setState({box: response.data})
     }
 
-    subscriveToNewFiles = () =>{
+    subscribeToNewFiles = () =>{
          const box = this.props.match.params.id;
          const io = socket("https://semana-omnistack.herokuapp.com");
 
